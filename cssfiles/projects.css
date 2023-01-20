@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FCFDF2;
+}
+
+p,
+li {
+    font-family: 'Andika', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Prosto One', cursive;
+}
+
+.container-fluid-hero {
+    padding: 1% 8%;
+}
+
+.get-startbtn {
+    padding: 7px 30px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: rgb(39, 39, 39);
+    color: whitesmoke;
+    outline: none;
+}
+
+.active {
+    border-bottom: 2px solid black;
+}
+
+.serviceimg {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+
+}
+
+/* sub nav section  */
+.subnav {
+    width: 100%;
+}
+
+.subnav .container ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subnav .container ul li {
+    list-style: none;
+}
+
+.subnav .container ul li a {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.activesub {
+    color: chocolate;
+}

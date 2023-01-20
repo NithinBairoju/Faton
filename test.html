@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="cssfiles/bootstrap.min.css">
+    <script defer src="jsfiles/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital@0;1&family=Prosto+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <style>
+        .card {
+            box-shadow: 1px 3px 8px 0px grey;
+            border-radius: 15px;
+        }
+
+        .card-body {
+            overflow: auto;
+        }
+
+        .card-body::-webkit-scrollbar {
+            width: 0.7em;
+        }
+
+        .card-body::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-body::-webkit-scrollbar-thumb {
+            background-color: rgb(87, 86, 86);
+            outline: 1px solid rgb(81, 92, 105);
+        }
+
+        .prfile-picture {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            border: 2px solid rgb(255, 136, 0);
+        }
+
+        .faton-message {
+            max-width: 70%;
+            text-align: left;
+            background-color: whitesmoke;
+            border: 1px solid grey;
+            padding: 2px 15px;
+            border-radius: 9px;
+            border-bottom-left-radius: 0px;
+            box-shadow: 2px 3px 3px 0px rgb(156, 156, 156);
+        }
+
+        .faton-message p {
+            margin: 2px;
+        }
+
+        .client-message {
+            max-width: 70%;
+            text-align: right;
+            background-color: rgb(106, 245, 106);
+            border: 2px solid rgb(54, 54, 54);
+            padding: 2px 6px;
+            border-radius: 9px;
+            border-bottom-right-radius: 0px;
+            box-shadow: 2px 3px 3px 0px rgba(156, 156, 156);
+        }
+
+        .client-message p {
+            margin: 2px;
+        }
+
+        .input-message {
+            width: 80%;
+            border: 0.1px solid grey;
+            border-radius: 10px;
+            outline: none;
+            padding: 1px 10px;
+            font-size: 1.1rem;
+            padding: 4px 5px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(252, 248, 248);">
+    <section class="chatbox">
+        <div class="card " style="width:300px; height:450px;">
+            <div class="card-header bg-white d-flex justify-content-between">
+                <h4>Faton</h4>
+                <p style="font-size: 1.1rem;cursor:pointer;"><i class="fa-solid fa-xmark"></i></p>
+            </div>
+            <div class="card-body bg-white">
+                <div class="faton-message-div w-100 d-flex align-items-center justify-content-start">
+                    <div class="prfile-picture m-1">
+                        <img src="images/favicon.png" class="img-fluid rounded-circle" alt="">
+                    </div>
+                    <div class="faton-message">
+                        <p> welcome to houser we are here to help you just message us we will replay soon</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-evenly align-items-center bg-white  w-100">
+                <input type="text" class="input-message" placeholder="enter message">
+                <p class="" style="font-size: 1.2rem;cursor:pointer;margin-bottom: 2px;"><i
+                        class="fa-solid fa-paper-plane"></i></p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

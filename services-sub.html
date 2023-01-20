@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="cssfiles/bootstrap.min.css">
+    <script defer src="jsfiles/bootstrap.bundle.min.js"></script>
+
+    <!-- csslinks -->
+    <link rel="stylesheet" href="cssfiles/services.css">
+    <!-- meta descriptions -->
+    <title>Faton</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- external link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital@0;1&family=Prosto+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #FCFDF2;
+        }
+
+        p {
+            font-family: 'Andika', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Prosto One', cursive;
+        }
+
+        .container-fluid-hero {
+            padding: 1% 8%;
+        }
+
+        .get-startbtn {
+            padding: 7px 30px;
+            border: 2px solid black;
+            border-radius: 25px;
+            background-color: rgb(39, 39, 39);
+            color: whitesmoke;
+            outline: none;
+        }
+
+        .active {
+            border-bottom: 2px solid black;
+        }
+
+        .serviceimg {
+            width: 100%;
+            height: 250px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 3px 1px rgb(121, 119, 119);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- hero section  -->
+    <section id="herosection">
+        <div class="container-fluid-hero">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logoimg.png" class="logo" width="90" height="50" alt="Faton">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
+                        <i class="fa-sharp fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mx-2 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Our services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="projects.html">Projects</a>
+                            </li>
+                        </ul>
+                        <button class="get-startbtn">Get started</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section id="body-section" class="my-4">
+        <div class="heading text-center my-4">
+            <h1>Modular kitchen (or) section that user opens</h1>
+            <p>home/our services/modularkitchen</p>
+        </div>
+        <div class="container">
+            <div class="images">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="images/modular-kitchen1.webp" alt="" class="serviceimg my-3">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="images/modular-kitchen2.webp" alt="" class="serviceimg my-3">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="images/modular-kitchen3.webp" alt="" class="serviceimg my-3">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="images/modular-kitchen4.webp" alt="" class="serviceimg my-3">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="images/livingroom.jpg" alt="" class="serviceimg my-3">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="images/livingroom2.jpg" alt="" class="serviceimg my-3">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="images/livingroom3.jpg" alt="" class="serviceimg my-3">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="images/livingroom4.jpg" alt="" class="serviceimg my-3">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footerid">
+        <div>
+            <div class="container footer-container d-sm-flex">
+                <div class="logocard">
+                    <img src="images/logoimg.png" alt="faton">
+                </div>
+                <div class="footerlinks">
+                    <ul class="d-flex justify-content-around">
+                        <li><a href="index.html" class="nav-link"> Home</a></li>
+                        <li><a href="services.html" class="nav-link"> Our services</a></li>
+                        <li><a href="projects.html" class="nav-link"> Projects</a></li>
+                    </ul>
+                    <!-- <button class="get-startbtn">get started</button> -->
+                </div>
+            </div>
+            <div class="container contacopyright">
+                <hr>
+                <div class="socialmedia-links d-flex justify-content-center">
+                    <a href="" class="nav-link mx-4"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="nav-link mx-4"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="nav-link mx-4"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="text-center" style="margin-bottom: 0;"> Designed by: <span>Nihtin</span> &#169;2023</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

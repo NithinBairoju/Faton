@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="cssfiles/bootstrap.min.css">
+    <script defer src="jsfiles/bootstrap.bundle.min.js"></script>
+
+    <!-- csslinks -->
+    <link rel="stylesheet" href="cssfiles/homepage.css">
+    <!-- meta descriptions -->
+    <title>Faton</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- external link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital@0;1&family=Prosto+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="" style="position: fixed;right:0;bottom:0; z-index: 10;" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+        <!-- <div class="">...</div> -->
+        <button class="chatbox-btn"><i class="fa-regular fa-comment"></i></button>
+    </div>
+    <div class="" style="position: fixed;right:0;bottom:70px; z-index: 10;">
+        <a href="#">
+            <img src="images/whatsapp-logo.jpg" alt="" width="70px">
+        </a>
+    </div>
+
+    <style>
+        #collapseWidthExample {
+            z-index: 10;
+        }
+
+        #collapseWidthExample .card {
+            box-shadow: -3px 3px 8px 0px grey;
+            border-radius: 15px;
+
+        }
+
+        #collapseWidthExample .card.card-body {
+            overflow: auto;
+        }
+
+        .card-body::-webkit-scrollbar {
+            width: 0.7em;
+        }
+
+        .card-body::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-body::-webkit-scrollbar-thumb {
+            background-color: rgb(87, 86, 86);
+            outline: 1px solid rgb(81, 92, 105);
+        }
+
+        .prfile-picture {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            border: 2px solid rgb(255, 136, 0);
+        }
+
+        .faton-message {
+            max-width: 70%;
+            text-align: left;
+            background-color: whitesmoke;
+            border: 1px solid grey;
+            padding: 2px 15px;
+            border-radius: 9px;
+            border-bottom-left-radius: 0px;
+            box-shadow: 2px 3px 3px 0px rgb(156, 156, 156);
+        }
+
+        .faton-message p {
+            margin: 2px;
+        }
+
+        .client-message {
+            max-width: 70%;
+            text-align: right;
+            background-color: rgb(106, 245, 106);
+            border: 2px solid rgb(54, 54, 54);
+            padding: 2px 6px;
+            border-radius: 9px;
+            border-bottom-right-radius: 0px;
+            box-shadow: 2px 3px 3px 0px rgba(156, 156, 156);
+        }
+
+        .client-message p {
+            margin: 2px;
+        }
+
+        .input-message {
+            width: 80%;
+            border: 0.1px solid grey;
+            border-radius: 10px;
+            outline: none;
+            padding: 1px 10px;
+            font-size: 1.1rem;
+            padding: 4px 5px;
+        }
+    </style>
+    <div class="collapse collapse-horizontal" id="collapseWidthExample" style="position: fixed;right:5px;bottom:70px;">
+        <div class=""
+            style="width:100%;height:100vh;background: rgba(0, 0, 0, 0.116); position: fixed;right:0;bottom:0; z-index: 1;"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false"
+            aria-controls="collapseWidthExample">
+        </div>
+
+        <div class="card padding-0" style=" width:300px; height:450px; z-index: 11;">
+            <div class="card-header bg-white d-flex justify-content-between">
+                <h4>Faton</h4>
+                <p style="font-size: 1.1rem;cursor:pointer;" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i
+                        class="fa-solid fa-xmark"></i></p>
+            </div>
+            <div class="card-body bg-white">
+                <div class="faton-message-div w-100 d-flex align-items-center justify-content-start">
+                    <div class="prfile-picture m-1">
+                        <img src="images/favicon.png" class="img-fluid rounded-circle" alt="">
+                    </div>
+                    <div class="faton-message">
+                        <p> welcome to houser we are here to help you just message us we will replay soon</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-evenly align-items-center bg-white  w-100">
+                <input type="text" class="input-message" placeholder="enter message">
+                <p class="" style="font-size: 1.2rem;cursor:pointer;margin-bottom: 2px;"><i
+                        class="fa-solid fa-paper-plane"></i></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero section  -->
+    <section id="herosection">
+        <div class="container-fluid-hero">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logoimg.png" class="logo" width="90" height="50" alt="Faton">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
+                        <i class="fa-sharp fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mx-2 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Our services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="projects.html">Projects</a>
+                            </li>
+                        </ul>
+                        <a href="contact.html"><button class="get-startbtn"> Get started</button></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="heroheader flex-direction-column">
+                <div class="hedreimage width-100">
+                    <img src="images/livingroom.jpg" class="imageh1 image1 box-shadow-lg"
+                        alt="interior designed garden">
+                    <img src="images/livingroom4.jpg" alt="" class="imageh1 image2 box-shadow-lg">
+                </div>
+                <div class="heder-section width-100 text-align-center">
+                    <h1>Make your space for better living </h1>
+                    <p style="width: 100%;">bring your dream home to life with one on one design help& hand-picked
+                        products tailored to your style, space, and budget.</p>
+                    <a href="contact.html"><button class="my-4 get-startbtn">Get free consultation</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="whyweare">
+        <div class="container">
+            <div class="imagecontainer">
+                <img src="images/gradenarea1.jpg" class="box-shadow-lg" alt="interior image">
+                <div class="text-img">
+                    <h2>Why should we?</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when
+                        looking at its layout.
+                    </p>
+                </div>
+            </div>
+            <div class="cards my-4">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 my-2">
+                        <div class="card">
+                            <h5 class="card-title">Right Budget</h5>
+                            <p class="card-text">we make and design according to the recommended and agreed budget from
+                                start</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 my-2">
+                        <div class="card">
+                            <h5 class="card-title">Experienced designer</h5>
+                            <p class="card-text">you get professional designer who design according to your taste</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6  my-2">
+                        <div class="card">
+                            <h5 class="card-title">2500+ happy customers</h5>
+                            <p class="card-text">we are a legal entity with official legality in the relevant government
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-6  my-2">
+                        <div class="card">
+                            <h5 class="card-title">Affordable price</h5>
+                            <p class="card-text">even though the price we provide is cheap we provide quality in that
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our projects section  -->
+    <section id="projects">
+        <div class="container">
+            <h2>All our projects</h2>
+            <a href="projects.html" class="float-end"> see all of our projects <i
+                    class="fa-solid fa-arrow-right"></i></a>
+            <div class="row projects-card">
+                <div class="col-lg-3 col-md-4 col-sm-6 my-2">
+                    <div class="card padding-0">
+                        <img src="images/homeoffice2.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">contemporary& classy 4 BHK</h3>
+                            <p class="card-text">even though the price we provide is cheap we provide quality in that
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-2">
+                    <div class="card padding-0">
+                        <img src="images/homeoffice4.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Monochromatic Grey 2 BHK</h3>
+                            <p class="card-text">even though the price we provide is cheap we provide quality in that
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-2">
+                    <div class="card padding-0">
+                        <img src="images/livingroom3.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Royal & Elegant 3 BHK</h3>
+                            <p class="card-text">even though the price we provide is cheap we provide quality in that
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-12 col-sm-6 my-2">
+                    <div class="card padding-0">
+                        <img src="images/homeoffice2.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">contemporary& classy 4 BHK</h3>
+                            <p class="card-text">even though the price we provide is cheap we provide quality in that
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our services section  -->
+    <section id="ourservices">
+        <div class="container">
+            <h2>Our services</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="services-sub.html">
+                        <div class="service-element">
+                            <img src="images/modular-kitchen2.webp" alt="" class="serviceimage">
+                            <h4 class="services-title">Modular kitchen</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="services-sub.html">
+                        <div class="service-element">
+                            <img src="images/livingroom3.jpg" alt="" class="serviceimage">
+                            <h3 class="services-title">Commercial design</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="services-sub.html">
+                        <div class="service-element">
+                            <img src="images/livingroom2.jpg" alt="" class="serviceimage">
+                            <h4 class="services-title">Living room design</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="services-sub.html">
+                        <div class="service-element">
+                            <img src="images/readingarea.jpg" alt="" class="serviceimage">
+                            <h4 class="services-title">Space saving furniture</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="services-sub.html">
+                        <div class="service-element">
+                            <img src="images/homeoffice3.jpg" alt="" class="serviceimage">
+                            <h4 class="services-title">Office fit out</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="services-sub.html">
+                        <div class="service-element">
+                            <img src="images/dining1.jpg" alt="" class="serviceimage">
+                            <h4 class="services-title">interior elevstion design</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="services-sub.html">
+                        <div class="service-element">
+                            <img src="images/bedroom3.jpg" alt="" class="serviceimage">
+                            <h4 class="services-title">Residential design</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="services-sub.html">
+                        <div class="service-element">
+                            <img src="images/lighting-design.jpg" alt="" class="serviceimage">
+                            <h4 class="services-title">Lighting design</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- how it work section  -->
+    <section id="howitwork">
+        <div class="container">
+            <h2 class="text-center">How it work</h2>
+            <div class="d-md-flex justify-content-evenly">
+                <div class="series">
+                    <div class="num">1.</div>
+                    <h5 class="text my-2">meet designer</h5>
+                </div>
+                <div class="series  ">
+                    <div class="num">2.</div>
+                    <h5 class="text my-2">Seal deal</h5>
+                </div>
+                <div class="series  ">
+                    <div class="num">3.</div>
+                    <h5 class="text my-2">place order</h5>
+                </div>
+                <div class="series  ">
+                    <div class="num">4.</div>
+                    <h5 class="text my-2">Installation begins</h5>
+                </div>
+                <div class="series ">
+                    <div class="num">5.</div>
+                    <h5 class="text my-2">Move in</h5>
+                </div>
+            </div>
+            <div class="work-text text-center">
+                <p>Our vision is to acquire new development everyday carrying on with way of life with best quality
+                    standard items execution. We give the Best and Professional help which speaks to a decent Value for
+                    Money, our point is to bring the Professionalism and Punctuality into this industry.
+                </p>
+                <a href="contact.html"><button class="get-startbtn ">Get free consultation</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonals section  -->
+    <section class="testimonals">
+        <div class="container">
+            <h2 class="text-center my-4">What our client say</h2>
+            <div id="carouselExampleControlsNoTouching" class="carousel slide " data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonal-row">
+
+                            <div class="card padding-0">
+                                <img src="images/homeoffice2.jpg" alt="" class="card-img-top">
+                                <h3 class="card-title px-2">ramnath</h3>
+                                <p class="card-text px-2">Our vision is to acquire new development everyday carrying
+                                    on with
+                                    way
+                                    of
+                                    life with best quality standard items execution</p>
+                                <p class="card-text px-2">Rating
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                </p>
+                            </div>
+
+                            <div class="card padding-0">
+                                <img src="images/homeoffice2.jpg" alt="" class="card-img-top">
+                                <h3 class="card-title px-2">ramnath</h3>
+                                <p class="card-text px-2">Our vision is to acquire new development everyday carrying
+                                    on with
+                                    way
+                                    of
+                                    life with best quality standard items execution</p>
+                                <p class="card-text px-2">Rating
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonal-row">
+
+                            <div class="card padding-0">
+                                <img src="images/homeoffice2.jpg" alt="" class="card-img-top">
+                                <h3 class="card-title px-2">ramnath</h3>
+                                <p class="card-text px-2">Our vision is to acquire new development everyday carrying
+                                    on with
+                                    way
+                                    of
+                                    life with best quality standard items execution</p>
+                                <p class="card-text px-2">Rating
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                </p>
+                            </div>
+
+                            <div class="card padding-0">
+                                <img src="images/homeoffice2.jpg" alt="" class="card-img-top">
+                                <h3 class="card-title px-2">ramnath</h3>
+                                <p class="card-text px-2">Our vision is to acquire new development everyday carrying
+                                    on with
+                                    way
+                                    of
+                                    life with best quality standard items execution</p>
+                                <p class="card-text px-2">Rating
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonal-row">
+
+                            <div class="card padding-0">
+                                <img src="images/homeoffice2.jpg" alt="" class="card-img-top">
+                                <h3 class="card-title px-2">ramnath</h3>
+                                <p class="card-text px-2">Our vision is to acquire new development everyday carrying
+                                    on with
+                                    way
+                                    of
+                                    life with best quality standard items execution</p>
+                                <p class="card-text px-2">Rating
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                </p>
+                            </div>
+
+                            <div class="card padding-0">
+                                <img src="images/homeoffice2.jpg" alt="" class="card-img-top">
+                                <h3 class="card-title px-2">ramnath</h3>
+                                <p class="card-text px-2">Our vision is to acquire new development everyday carrying
+                                    on with
+                                    way
+                                    of
+                                    life with best quality standard items execution</p>
+                                <p class="card-text px-2">Rating
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="contorls-testimonals text-center my-4">
+                <button class="carousel-cnotrol" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="carousel-cnotrol" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact with us section  -->
+    <section id="contact-us">
+        <div class="container conatctus-container d-md-flex justify-content-evenly">
+            <div class="sidebar width-100 ">
+                <div class="side-element" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+                    aria-expanded="false" aria-controls="collapseWidthExample">
+                    <h4>Chat with us</h4>
+                    <p>U can chat with us</p>
+                </div>
+                <div class="side-element">
+                    <h4>Call us</h4>
+                    <p>U call to us</p>
+                    <p>number:000000000</p>
+                </div>
+                <div class="side-element">
+                    <a href="https://goo.gl/maps/A8RawdZc7VZxEjyRA">
+                        <h4>Visit us </h4>
+                        <p>visit our office</p>
+                    </a>
+                </div>
+            </div>
+            <div class="conatctdiv">
+                <h2>Get free design consultation of your home</h2>
+                <div class="conatact-form ">
+                    <form action="">
+                        <input type="text" name="client-name" id="" placeholder="Enter name">
+                        <input type="email" name="client-email" id="" placeholder="Enter email">
+                        <input type="tel" name="client-number" id="" placeholder="enter phone number">
+                        <div><input type="checkbox" name="whatsapp-check" id="">
+                            <label for="whatsapp-check">can we contact you on whatsapp</label>
+                        </div>
+                        <input type="text" name="client-property" placeholder="Enter your property">
+                        <button class="get-startbtn">Get free consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- visit us map section  -->
+    <section id="visit-map">
+        <div class="container map-container flex-direction-column">
+            <div>
+                <h4>Vist Us</h4>
+                <p>Come and visit our office</p>
+                <p>address is in the map</p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1896.178052834521!2d78.85145154307132!3d18.101339233918992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc92b2dc57757b%3A0x6d9bbb855b2da902!2sSiddipet%20-Old%20Bus%20stand!5e0!3m2!1sen!2sin!4v1673255165662!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- footer section  -->
+
+    <footer id="footerid">
+        <div>
+            <div class="container footer-container d-sm-flex">
+                <div class="logocard">
+                    <img src="images/logoimg.png" alt="faton">
+                </div>
+                <div class="footerlinks">
+                    <ul class="d-flex justify-content-around">
+                        <li><a href="index.html" class="nav-link"> Home</a></li>
+                        <li><a href="services.html" class="nav-link"> Our services</a></li>
+                        <li><a href="projects.html" class="nav-link"> Projects</a></li>
+                    </ul>
+                    <!-- <button class="get-startbtn">get started</button> -->
+                </div>
+            </div>
+            <div class="container contacopyright">
+                <hr>
+                <div class="socialmedia-links d-flex justify-content-center">
+                    <a href="" class="nav-link mx-4"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="nav-link mx-4"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="nav-link mx-4"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="text-center" style="margin-bottom: 0;"> Designed by: <span>Nihtin</span> &#169;2023</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
